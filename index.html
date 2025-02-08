@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual Pulsa Murah</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <h1><i class="fas fa-bolt"></i> DIMZ STORE</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#harga">Harga</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="section">
+        <h1 class="fade-in">Selamat Datang di <span>DIMZ STORE</span></h1>
+        <p class="slide-up">Isi ulang pulsa cepat, murah, dan terpercaya.</p>
+        <a href="#harga" class="btn glow">Lihat Harga</a>
+    </section>
+
+    <!-- Daftar Harga -->
+    <section id="harga" class="section">
+        <h2 class="zoom-in">Daftar Harga Pulsa</h2>
+        <div class="harga-container">
+            <div class="harga-card">
+                <img src="telkomsel.png" alt="Telkomsel">
+                <p>10K: Rp11.999</p>
+                <p>15K: Rp17.500</p>
+                <p>20K: Rp21.999</p>
+                <p>25K: Rp27.500</p>
+                <p>30K: Rp31.999</p>
+                <p>35K: Rp36.999</p>
+                <p>40K: Rp41.999</p>
+                <p>45K: Rp47.500</p>
+                <p>50K: Rp51.999</p>
+            </div>
+            <div class="harga-card">
+                <img src="axis.png" alt="Axis">
+                <p>10K: Rp11.999</p>
+                <p>15K: Rp17.500</p>
+                <p>20K: Rp21.999</p>
+                <p>25K: Rp27.500</p>
+                <p>30K: Rp31.999</p>
+                <p>35K: Rp36.999</p>
+                <p>40K: Rp41.999</p>
+                <p>45K: Rp47.500</p>
+                <p>50K: Rp51.999</p>
+            </div>
+            <div class="harga-card">
+                <img src="xl.png" alt="XL">
+                <p>10K: Rp11.999</p>
+                <p>15K: Rp17.500</p>
+                <p>20K: Rp21.999</p>
+                <p>25K: Rp27.500</p>
+                <p>30K: Rp31.999</p>
+                <p>35K: Rp36.999</p>
+                <p>40K: Rp41.999</p>
+                <p>45K: Rp47.500</p>
+                <p>50K: Rp51.999</p>
+            </div>
+            <div class="harga-card">
+                <img src="indosat.png" alt="Indosat">
+                <p>10K: Rp11.999</p>
+                <p>15K: Rp17.500</p>
+                <p>20K: Rp21.999</p>
+                <p>25K: Rp27.500</p>
+                <p>30K: Rp31.999</p>
+                <p>35K: Rp36.999</p>
+                <p>40K: Rp41.999</p>
+                <p>45K: Rp47.500</p>
+                <p>50K: Rp51.999</p>
+            </div>
+            <div class="harga-card">
+                <img src="smartfren.png" alt="Smartfren">
+                <p>10K: Rp11.999</p>
+                <p>15K: Rp17.500</p>
+                <p>20K: Rp21.999</p>
+                <p>25K: Rp27.500</p>
+                <p>30K: Rp31.999</p>
+                <p>35K: Rp36.999</p>
+                <p>40K: Rp41.999</p>
+                <p>45K: Rp47.500</p>
+                <p>50K: Rp51.999</p>
+            </div>
+        </div>
+    </section>
+    <section id="beli-pulsa">
+        <h2>Beli Pulsa Sekarang</h2>
+        <form id="pulsaForm">
+            <label for="operator">Pilih Operator:</label>
+            <select id="operator">
+                <option value="Telkomsel">Telkomsel</option>
+                <option value="XL">XL</option>
+                <option value="Indosat">Indosat</option>
+                <option value="Tri">Tri</option>
+                <option value="Smartfren">Smartfren</option>
+            </select>
+    
+            <label for="nominal">Pilih Nominal:</label>
+            <select id="nominal">
+                <option value="10.000">10.000</option>
+                <option value="15.000">15.000</option>
+                <option value="20.000">20.000</option>
+                <option value="25.000">25.000</option>
+                <option value="30.000">30.000</option>
+                <option value="35.000">35.000</option>
+                <option value="40.000">40.000</option>
+                <option value="45.000">45.000</option>
+                <option value="50.000">50.000</option>
+            </select>
+    
+            <label for="nomor">Masukkan Nomor HP:</label>
+            <input type="tel" id="nomor" placeholder="08xxxxxxxxxx" required>
+    
+            <button type="button" onclick="beliPulsa()">Beli Sekarang</button>
+        </form>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="section">
+        <h2 class="fade-in">Hubungi Kami</h2>
+        <p>WhatsApp: <a href="https://wa.me/6282133380651" class="glow">Klik di sini</a></p>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- Banner Promo -->
+<section id="promo" class="section">
+    <div class="promo-box">
+        <h2>Diskon 5% untuk Pembelian Pertama!</h2>
+    </div>
+</section>
+
+<!-- FAQ (Pertanyaan Umum) -->
+<section id="faq" class="section">
+    <h2>Pertanyaan Umum (FAQ)</h2>
+    <div class="faq-item">
+        <button class="faq-question">Berapa lama proses isi pulsa? ⬇</button>
+        <div class="faq-answer">Biasanya kurang dari 3 menit.</div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">Apakah bisa isi pulsa ke semua operator? ⬇</button>
+        <div class="faq-answer">Ya, kami melayani semua operator.</div>
+    </div>
+</section>
+<!-- Metode Pembayaran -->
+<section id="payment" class="section">
+    <h2>Metode Pembayaran</h2>
+    <div class="payment-methods">
+        <button class="payment-button">OVO</button>
+        <button class="payment-button">GOPAY</button>
+        <button class="payment-button">DANA</button>
+    </div>
+</section>
+<footer>
+    <p>© 2025 Jual Pulsa - Semua Hak Dilindungi</p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/dimas.jr13" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@whyuuuuaz" target="_blank">
+            <img src="tiktok.png" alt="tiktok">
+        </a>
+    </div>
+</footer>
+</body>
+</html>
+<div id="promo-popup">
+    <p>Dapatkan Diskon 5% Sekarang! <a href="#beli-pulsa">Beli Sekarang</a></p>
+    <button onclick="tutupPopup()">Tutup</button>
+</div>
