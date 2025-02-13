@@ -72,3 +72,18 @@ window.onload = function () {
 function tutupPopup() {
     document.getElementById("promo-popup").style.display = "none";
 }
+
+
+document.getElementById("beliToken").addEventListener("click", function () {
+    let nomorHP = document.getElementById("nomorToken").value;
+    let nominal = document.getElementById("nominalToken").value;
+    let nomorWhatsApp = "6282133380651"; // Ganti dengan nomor WA tujuan kamu
+
+    if (nomorHP === "" || nominal === "") {
+        alert("Harap masukkan nomor HP dan pilih nominal token listrik!");
+        return;
+    }
+
+    let waURL = https://wa.me/6282133380651${nomorWhatsApp}?text=Halo,%20saya%20ingin%20beli%20token%20listrik%20dengan%20nominal%20${nominal}%20untuk%20nomor%20${nomorHP}.;
+
+    window.location.href = waURL; // Mengarahkan langsung ke WhatsApp
