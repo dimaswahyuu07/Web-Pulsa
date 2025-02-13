@@ -9,18 +9,8 @@
 </head>
 <body>
 
-    <!-- Navigasi -->
-    <nav class="navbar">
-        <h1><i class="fas fa-bolt"></i> DIMZ STORE</h1>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#harga">Harga</a></li>
-            <li><a href="#kontak">Kontak</a></li>
-        </ul>
-    </nav>
-
     <!-- Home -->
-    <section id="home" class="section">
+    <section id="home" class="welcome-box">
         <h1 class="fade-in">Selamat Datang di <span>DIMZ STORE</span></h1>
         <p class="slide-up">Isi ulang pulsa cepat, murah, dan terpercaya.</p>
         <a href="#harga" class="btn glow">Lihat Harga</a>
@@ -92,43 +82,50 @@
             </div>
         </div>
     </section>
-    <section id="beli-pulsa">
-        <h2>Beli Pulsa Sekarang</h2>
-        <form id="pulsaForm">
-            <label for="operator">Pilih Operator:</label>
-            <select id="operator">
-                <option value="Telkomsel">Telkomsel</option>
-                <option value="XL">XL</option>
-                <option value="Indosat">Indosat</option>
-                <option value="Tri">Tri</option>
-                <option value="Smartfren">Smartfren</option>
-            </select>
-    
-            <label for="nominal">Pilih Nominal:</label>
-            <select id="nominal">
-                <option value="10.000">10.000</option>
-                <option value="15.000">15.000</option>
-                <option value="20.000">20.000</option>
-                <option value="25.000">25.000</option>
-                <option value="30.000">30.000</option>
-                <option value="35.000">35.000</option>
-                <option value="40.000">40.000</option>
-                <option value="45.000">45.000</option>
-                <option value="50.000">50.000</option>
-            </select>
-    
-            <label for="nomor">Masukkan Nomor HP:</label>
-            <input type="tel" id="nomor" placeholder="08xxxxxxxxxx" required>
-    
-            <button type="button" onclick="beliPulsa()">Beli Sekarang</button>
-        </form>
-    </section>
-
+        
     <!-- Kontak -->
     <section id="kontak" class="section">
-        <h2 class="fade-in">Hubungi Kami</h2>
-        <p>WhatsApp: <a href="https://wa.me/6282133380651" class="glow">Klik di sini</a></p>
+        <h2 class="fade-in">BELI PULSA SEKARANG</h2>
+        <p>WhatsApp: <a href="https://wa.me/6282133380651?text=Assalamualaikum kak Dimz saya mau pesan Pulsa" class="glow">Klik disini</a></p>
     </section>
+    <section class="daftar-token">
+        <h2>Daftar Harga Token Listrik</h2>
+         <div class="token-container">
+             <a href="https://wa.me/6282133380651?text=Assalamualaikum kak Dimz saya mau pesan token" class="token-container">
+         <div class="token-card" onclick="pilihToken('20K', 22000)">
+                 <h3>Token 20K</h3>
+                 <p>Rp22.000</p>
+             </div>
+     
+             <div class="token-card" onclick="pilihToken('50K', 52000)">
+                 <h3>Token 50K</h3>
+                 <p>Rp52.000</p>
+             </div>
+     
+             <div class="token-card" onclick="pilihToken('100K', 102000)">
+                 <h3>Token 100K</h3>
+                 <p>Rp102.000</p>
+             </div>
+     
+             <div class="token-card" onclick="pilihToken('200K', 202000)">
+                 <h3>Token 200K</h3>
+                 <p>Rp202.000</p>
+             </div>
+     
+             <div class="token-card" onclick="pilihToken('500K', 502000)">
+                 <h3>Token 500K</h3>
+                 <p>Rp502.000</p>
+             </div>
+     
+             <div class="token-card" onclick="pilihToken('1JT', 1002000)">
+                 <h3>Token 1JT</h3>
+                 <p>Rp1.002.000</p>
+             </div>
+         </div>
+         </a>
+     </section>
+ </form>
+</section>
 
     <script src="script.js"></script>
     <!-- Banner Promo -->
@@ -163,7 +160,7 @@
     <p>© 2025 Jual Pulsa - Semua Hak Dilindungi</p>
     <div class="social-icons">
         <a href="https://www.instagram.com/dimas.jr13" target="_blank">
-            <img src="instagram.png" alt="Instagram">
+            <img src="Instagram.png" alt="Instagram">
         </a>
         <a href="https://www.tiktok.com/@whyuuuuaz" target="_blank">
             <img src="tiktok.png" alt="tiktok">
